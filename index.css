@@ -1,0 +1,43 @@
+@font-face {
+    font-family: aileron;
+    src: url(Aileron-Regular.otf);
+}
+
+/* navbar */
+
+.navbar {
+    margin: 0;
+    border: none;
+}
+
+.navbar-header, .navbar-collapse {
+    background-color: #000;
+    color: #fff;
+    padding: 0 15px;
+}
+
+.navbar-brand {
+    color: #fff !important;
+}
+
+#navbar {
+    padding: 0;
+    font-family: aileron, sans-serif;
+}
+
+.navbar-toggle {
+    border: none;
+    /*transition: all .5s ease 0s;*/
+    margin: 8px 7px;
+}
+
+.navbar-toggle:hover, .navbar-brand:hover {
+    cursor: pointer;
+    background-image: radial-gradient(ellipse at bottom, white 1%, black 40%);
+}
+
+.navbar-toggle-break {
+    margin: 10px 0 8px 0;
+    font-size: 22px;
+}
+
