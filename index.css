@@ -64,6 +64,10 @@
     font-size: 20px;
 }
 
+.buttons-information {
+    position: relative;
+}
+
 .menu-buttons {
     width: 200px;
     margin: 0 40% 0 40%;
@@ -83,6 +87,48 @@
 .menu-button:hover {
     color: #ffd700;
     font-size: 18px;
+}
+
+
+.information {
+    position: absolute;
+    top: 15px;
+    left: 250px;
+
+    font-size: 18px;
+    padding: 50px;
+    text-align: left;
+}
+
+.ind-project {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+.ind-project-img {
+    width: 200px;
+    height: 170px;
+}
+
+.ind-project-title {
+    width: 200px;
+    height: 15px;
+    text-align: center;
+}
+
+.ind-project-repo-link {
+    width: 200px;
+    height: 15px;
+    margin: 0 auto;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+}
+
+.ind-project-repo-link i {
+    margin: 0 10px;
 }
 
 .hidden {
