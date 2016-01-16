@@ -6,6 +6,7 @@
 /* navbar */
 
 .navbar {
+    height: 4vh;
     margin: 0;
     border: none;
 }
@@ -33,11 +34,57 @@
 
 .navbar-toggle:hover, .navbar-brand:hover {
     cursor: pointer;
-    background-image: radial-gradient(ellipse at bottom, white 1%, black 40%);
+    color: #ffd700;
+    background: none !important;
 }
 
 .navbar-toggle-break {
     margin: 10px 0 8px 0;
     font-size: 22px;
+}
+
+/* body */
+
+#body {
+    height: 96vh;
+    text-align: center;
+    font-family: aileron, sans-serif;
+    background-image: linear-gradient(to left, #d3d3d3 0%, #fff 50%, #d3d3d3 100%);
+}
+
+.name-title {
+    margin: 10vh auto 10vh auto;
+}
+
+.name {
+    font-size: 36px;
+}
+
+.title {
+    font-size: 20px;
+}
+
+.menu-buttons {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.menu-button {
+    width: 200px;
+    height: 100px;
+
+    background-color: #000;
+    color: #fff;
+
+    margin: 10px;
+}
+
+.menu-button:hover {
+    color: #ffd700;
+    font-size: 18px;
+}
+
+.hidden {
+    display: none;
 }
 
