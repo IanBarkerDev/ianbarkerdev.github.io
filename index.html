@@ -57,6 +57,10 @@
                         a minor in Mathematics, and a passion for solving problems.
                         I'm always ready to work in new areas of web development and
                         to have fun building anything with code.
+                     </p>
+                    <p>
+                        If a website requires more difficult code to provide a better
+                        user experience then it's the most fun.
                     </p>
                 </div>
                 <div class="information-body hidden" id="skills-body">
@@ -103,14 +107,16 @@
 <script type="text/javascript">
     var infoBodies = ["#about-body", "#skills-body", "#project-body", "#contact-body"];
     $(document).ready(function() {
+
         $(".main-button").on("click", function() {
+            var id, idBody;
             // if buttons still in middle
             if($(".menu-buttons").css("margin") !== "0 0 0 10px") {
                 $(".menu-buttons").css("margin", "0 0 0 10px");
-                var id = $(this).attr("id");
+                id = $(this).attr("id");
                 id = id.slice(0, id.length - 5);
 
-                var idBody = "#" + id + "-body";
+                idBody = "#" + id + "-body";
 
                 setTimeout(function () {
                     for(var i in infoBodies) {
@@ -122,10 +128,10 @@
                 }, 1000);
             } else {
                 // buttons not in middle
-                var id = $(this).attr("id");
+                id = $(this).attr("id");
                 id = id.slice(0, id.length - 5);
 
-                var idBody = "#" + id + "-body";
+                idBody = "#" + id + "-body";
 
                 for(var i in infoBodies) {
                     if(!$(infoBodies[i]).hasClass("hidden")) {
