@@ -53,14 +53,15 @@
             <div class="information">
                 <div class="information-body" id="about-body">
                     <p>
-                        I am a senior in college with a major in Computer Science,
-                        a minor in Mathematics, and a passion for solving problems.
-                        I'm always ready to work in new areas of web development and
-                        to have fun building anything with code.
+                        &nbsp&nbsp&nbsp&nbsp&nbsp<span class="first-letter">I</span> am a senior at Knox College with a major in Computer Science and a minor in Mathematics.
+                        I drifted through the Computer Science program for a while working with Java and C before stumbling
+                        upon web development. Working with front-end development is incredibly enjoyable for me. I enjoy working with HTML/CSS
+                        and Javascript as well as overall concepts like design and implementation.
                      </p>
                     <p>
-                        If a website requires more difficult code to provide a better
-                        user experience then it's the most fun.
+                        &nbsp&nbsp&nbsp&nbsp&nbsp<span class="first-letter">B</span>y combining an understanding of Computer Science concepts, algorithms, and theory with a self-driven
+                         passion for web development, I hope to improve my knowldge of the field by being able to learn from those
+                         better than me.
                     </p>
                 </div>
                 <div class="information-body" id="skills-body">
@@ -140,10 +141,10 @@
             idBody = "#" + id + "-body";
 
             if(!isMoved) {
-                $(".menu-buttons").css("animation", "menuSlide 1.5s linear forwards");
+                $(".menu-buttons").css("animation", "menuSlide 1s linear forwards");
                 setTimeout(function() {
                     updateBodies(idBody)
-                }, 1500);
+                }, 1000);
                 isMoved = true;
             } else {
                 updateBodies(idBody);
