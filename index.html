@@ -5,7 +5,7 @@
     <title>Ian Barker | Web Development</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 
 </head>
@@ -51,7 +51,7 @@
             </div>
 
             <div class="information">
-                <div class="information-body hidden" id="about-body">
+                <div class="information-body" id="about-body">
                     <p>
                         I am a senior in college with a major in Computer Science,
                         a minor in Mathematics, and a passion for solving problems.
@@ -63,7 +63,7 @@
                         user experience then it's the most fun.
                     </p>
                 </div>
-                <div class="information-body hidden" id="skills-body">
+                <div class="information-body" id="skills-body">
                     <ul>
                         <li>Priority in HTML, CSS, and Javascript.</li>
                         <li>
@@ -72,11 +72,11 @@
                         </li>
                         <li>
                             Have experience with Java and C as well as topics
-                            such as Parallel Programming and Software Design.
+                            such as Parallel Programming, Graphics, and Software Design.
                         </li>
                     </ul>
                 </div>
-                <div class="information-body hidden" id="projects-body">
+                <div class="information-body" id="projects-body">
                     <div class="projects">
                         <div class="ind-project">
                             <p class="ind-project-title">Night Life App</p>
@@ -95,7 +95,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="information-body hidden" id="contact-body">
+                <div class="information-body" id="contact-body">
                     <p>Get In Touch With Me!</p>
                     <a href="mailto:ibarker94@yahoo.com">Via Email</a>
                 </div>
@@ -105,44 +105,64 @@
 </div>
 
 <script type="text/javascript">
-    var infoBodies = ["#about-body", "#skills-body", "#project-body", "#contact-body"];
+    var infoBodies = ["#about-body", "#skills-body", "#projects-body", "#contact-body"];
+    var isMoved = false;
     $(document).ready(function() {
 
         $(".main-button").on("click", function() {
             var id, idBody;
-            // if buttons still in middle
-            if($(".menu-buttons").css("margin") !== "0 0 0 10px") {
-                $(".menu-buttons").css("margin", "0 0 0 10px");
-                id = $(this).attr("id");
-                id = id.slice(0, id.length - 5);
 
-                idBody = "#" + id + "-body";
+            id = $(this).attr("id");
+            id = id.slice(0, id.length - 5);
 
-                setTimeout(function () {
-                    for(var i in infoBodies) {
-                        if(!$(infoBodies[i]).hasClass("hidden")) {
-                            $(infoBodies[i]).addClass("hidden");
-                        }
-                    }
-                    $(idBody).removeClass("hidden");
-                }, 1000);
+            idBody = "#" + id + "-body";
+
+            if(!isMoved) {
+                $(".menu-buttons").css("animation", "menuSlide 1.5s linear forwards");
+                setTimeout(function() {
+                    updateBodies(idBody)
+                }, 1500);
+                isMoved = true;
             } else {
-                // buttons not in middle
-                id = $(this).attr("id");
-                id = id.slice(0, id.length - 5);
-
-                idBody = "#" + id + "-body";
-
-                for(var i in infoBodies) {
-                    if(!$(infoBodies[i]).hasClass("hidden")) {
-                        $(infoBodies[i]).addClass("hidden");
-                    }
-                }
-                $(idBody).removeClass("hidden");
-
+                updateBodies(idBody);
             }
+
+
+
+        });
+
+        $(".navbar-toggle").on("click", function() {
+            var id, idBody;
+
+            id = $(this).attr("id");
+            id = id.slice(0, id.length - 4);
+
+            idBody = "#" + id + "-body";
+
+            if(!isMoved) {
+                $(".menu-buttons").css("animation", "menuSlide 1.5s linear forwards");
+                setTimeout(function() {
+                    updateBodies(idBody)
+                }, 1500);
+                isMoved = true;
+            } else {
+                updateBodies(idBody);
+            }
+
+
         })
-    })
+    });
+
+    function updateBodies(idBody) {
+        for(var i in infoBodies) {
+
+            if(infoBodies[i] === idBody) {
+                $(infoBodies[i]).css("display", "block");
+            } else {
+                $(infoBodies[i]).css("display", "none");
+            }
+        }
+    }
 </script>
 
 </body>
