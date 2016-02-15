@@ -19,6 +19,10 @@
 
 .navbar-brand {
   color: #fff !important;
+
+  &:hover {
+    cursor: default !important;
+  }
 }
 
 #navbar {
@@ -28,7 +32,6 @@
 
 .navbar-toggle {
   border: none;
-  /*transition: all .5s ease 0s;*/
   margin: 8px 7px;
 }
 
@@ -49,7 +52,7 @@
   height: 96vh;
   text-align: center;
   font-family: aileron, sans-serif;
-  background-image: linear-gradient(to left, #d3d3d3 0%, #fff 50%, #d3d3d3 100%);
+  background-image: linear-gradient(to left, #AEB79A 0%, #DBE2CD 50%, #AEB79A 100%);
 }
 
 .name-title {
@@ -85,6 +88,8 @@
 
   margin: 10px;
   font-size: 18px;
+
+  border: 1px outset #9D94A1;
 }
 
 .menu-button:hover {
@@ -103,14 +108,15 @@
 }
 
 .information-body {
-  border: 3px solid #44502D;
-  background-color: #AEB79A;
+  border: 3px solid #312139;
+  background-color: #9D94A1;
   height: 400px;
   padding: 15px;
   font-family: aileron, sans-serif;
   font-size: 20px;
   display: none;
   line-height: 24px;
+  color: #000;
 
   p {
     margin: 45px auto;
