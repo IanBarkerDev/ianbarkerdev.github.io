@@ -119,13 +119,19 @@
             idBody = "#" + id + "-body";
 
             if(!isMoved) {
-                $(".menu-buttons").css("animation", "menuSlide 1.5s linear forwards");
+                $(".menu-buttons").css("animation", "menuSlideLeft 1.5s linear forwards");
                 setTimeout(function() {
                     updateBodies(idBody)
                 }, 1500);
                 isMoved = true;
             } else {
-                updateBodies(idBody);
+                if($(idBody).css("display") === "block") {
+                    $(idBody).css("display", "none");
+                    $(".menu-buttons").css("animation", "menuSlideRight 1.5s linear forwards");
+                    isMoved = false;
+                } else {
+                    updateBodies(idBody);
+                }
             }
 
 
@@ -141,13 +147,19 @@
             idBody = "#" + id + "-body";
 
             if(!isMoved) {
-                $(".menu-buttons").css("animation", "menuSlide 1s linear forwards");
+                $(".menu-buttons").css("animation", "menuSlideLeft 1.5s linear forwards");
                 setTimeout(function() {
                     updateBodies(idBody)
-                }, 1000);
+                }, 1500);
                 isMoved = true;
             } else {
-                updateBodies(idBody);
+                if($(idBody).css("display") === "block") {
+                    $(idBody).css("display", "none");
+                    $(".menu-buttons").css("animation", "menuSlideRight 1.5s linear forwards");
+                    isMoved = false;
+                } else {
+                    updateBodies(idBody);
+                }
             }
 
 
