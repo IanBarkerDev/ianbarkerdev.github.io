@@ -16,7 +16,7 @@ body {
     }
 
     .buttons-information {
-      margin-top: 16vh;
+      margin-top: 20rem;
       height: 100%;
       min-height: 50vh;
 
@@ -56,11 +56,16 @@ body {
           padding: 3rem;
           height: inherit;
           min-height: inherit;
-          background-color: #fff;
+          background-color: #B17B40;
           font-size: 20px;
 
-          .fa-github {
+          .github-link {
+            color: #fff;
             &:hover {
+              text-decoration: underline;
+            }
+
+            &:hover > .fa-github {
               text-decoration: underline;
             }
           }
@@ -79,6 +84,10 @@ body {
               border-radius: 1rem;
               height: 18rem;
               margin: .5em auto;
+
+              @media (max-width: 1200px) {
+                height: 22rem;
+              }
 
               .ind-project-title {
                 text-align: center;
@@ -101,6 +110,12 @@ body {
                 &.ind-project-info {
                   margin: 0 2rem 2rem 20rem;
                   font-size: 16px;
+
+                  .ind-project-repo-link {
+                    &:hover > .fa-github {
+                      text-decoration: underline;
+                    }
+                  }
                 }
 
 
@@ -114,19 +129,20 @@ body {
   }
 }
 
+
 @keyframes menuSlideUp {
   0% {
     top: 50%;
   }
 
   100% {
-    top: 25%;
+    top: 28rem;
   }
 }
 
 @keyframes menuSlideDown {
   0% {
-    top: 25%;
+    top: 28rem;
   }
 
   100% {
