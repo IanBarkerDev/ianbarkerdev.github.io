@@ -5,37 +5,11 @@
     <title>Ian Barker | Web Development</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="css.css">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Oxygen|Lora:400,700' rel='stylesheet' type='text/css'>    <link rel="stylesheet" href="css.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 
 </head>
 <body>
-<nav class="navbar navbar-default">
-    <div class="container-fluid" id="navbar">
-        <div class="navbar-header">
-            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar-collapsed" aria-expanded="false">
-                <span class="sr-only">Toggle Navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" id="navbar-brand" href="#">IAN BARKER</a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="navbar-collapsed">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="navbar-toggle" id="about-nav">About</li>
-                <li class="navbar-toggle-break">|</li>
-                <li class="navbar-toggle" id="skills-nav">Skills</li>
-                <li class="navbar-toggle-break">|</li>
-                <li class="navbar-toggle" id="projects-nav">Projects</li>
-                <li class="navbar-toggle-break">|</li>
-                <li class="navbar-toggle" id="contact-nav">Contact</li>
-            </ul>
-        </div>
-    </div>
-</nav>
 
 <div class="container-fluid" id="body">
     <div class="container">
@@ -45,87 +19,90 @@
         </div>
         <div class="buttons-information">
             <div class="menu-buttons">
-                <button class="menu-button main-button" id="about-menu">About</button>
-                <button class="menu-button main-button" id="skills-menu">Skills</button>
-                <button class="menu-button main-button" id="projects-menu">Projects</button>
-                <button class="menu-button main-button" id="contact-menu">Contact</button>
+                <button class="menu-button" id="about-menu">About</button>
+                <button class="menu-button" id="skills-menu">Skills</button>
+                <button class="menu-button" id="projects-menu">Projects</button>
+                <button class="menu-button" id="contact-menu">Contact</button>
             </div>
 
             <div class="information">
                 <div class="information-body" id="about-body">
-                    <p>
-                        &nbsp&nbsp&nbsp&nbsp&nbsp<span class="first-letter">I</span> am a senior at Knox College with a major in Computer Science and a minor in Mathematics.
-                        I drifted through the Computer Science program for a while working with Java and C before stumbling
-                        upon web development. Working with front-end development is incredibly enjoyable for me. I enjoy working with HTML/CSS
-                        and Javascript as well as overall concepts like design and implementation.
-                     </p>
-                    <p>
-                        &nbsp&nbsp&nbsp&nbsp&nbsp<span class="first-letter">B</span>y combining an understanding of Computer Science concepts, algorithms, and theory with a self-driven
-                         passion for web development, I aim to improve my knowledge of the field by being able to learn from those
-                         better than me.
-                    </p>
+                    <div class="about-body-p">
+                        <p class="about-body-name">Ian Barker</p>
+                        <p>
+                            I am a senior at Knox College with a major in Computer Science and a minor in Mathematics.
+                            I drifted through the Computer Science program for a while working with Java and C before stumbling
+                            upon web development. I strongly enjoy working with both HTML/CSS and Javascript. They have brought back the fun of development for me. I have expanded my base
+                            with more back-end technologies like node.js, Express, and MongoDB. I find the most fun in solving problems even if sometimes the little things are the most frustrating.
+                            Web development is a place where I feel like creativity and problem solving come together for a fulfilling experience.
+                        </p>
+                        <p>
+                            When not coding or designing, I enjoy watching sports and playing complicated strategy games. If it doesn't take you 100 hours
+                             of failure to get moving in the right direction, what's the fun of a game?
+                        </p>
+                    </div>
+
                 </div>
                 <div class="information-body" id="skills-body">
-                    <div class="ind-skill" id="javascript">
-                        <span class="text">JavaScript</span>
-                        <span class="devicons devicons-javascript icon"></span>
-                    </div>
-                    <div class="ind-skill" id="html5">
-                        <span class="text">HTML5</span>
-                        <span class="devicons devicons-html5 icon"></span>
-                    </div>
-                    <div class="ind-skill" id="css3">
-                        <p class="text">CSS3</p>
-                        <span class="devicons devicons-css3 icon"></span>
-                    </div>
-                    <div class="ind-skill" id="jquery">
-                        <span class="text">jQuery</span>
-                        <span class="devicons devicons-jquery icon"></span>
-                    </div>
-                    <div class="ind-skill" id="nodejs">
-                        <span class="text">nodeJS</span>
-                        <span class="devicons devicons-nodejs icon"></span>
-                    </div>
-                    <div class="ind-skill" id="bootstrap">
-                        <span class="text">Bootstrap</span>
-                        <span class="devicons devicons-bootstrap icon"></span>
-                    </div>
-                    <div class="ind-skill" id="mongodb">
-                        <span class="text">MongoDB</span>
-                        <span class="devicons devicons-mongodb icon"></span>
-                    </div>
-                    <div class="ind-skill" id="java">
-                        <span class="text">Java</span>
-                        <span class="devicons devicons-java icon"></span>
-                    </div>
-                    <div class="ind-skill" id="sass">
-                        <span class="text">Sass</span>
-                        <span class="devicons devicons-sass icon"></span>
+                    <div class="skill-body-list">
+                        <p>
+                            I enjoy working with <span class="skill-bold">HTML5</span> and <span class="skill-bold">CSS3</span> everyday. With HTML it's about being better organized and designing things
+                         better so that my CSS is better. With CSS (and recently exploring SASS), it's more about learning how little I know. Every day I find some cool new concept
+                         that makes pages look cleaner, more professional, or smoother. When I look back through my work, I can see clear places where I learned a new skill (and then overused it everywhere).
+                             Experience is had with <span class="skill-bold">Bootstrap</span> and it jumps in and out of the code that I use. However, I tend to use Bootstrap as a guide to how things should look, and
+                             then go back and code it myself (sometimes it looks rougher, but I definitely understand it better).
+                        </p>
+                        <p>
+                            Currently the language I enjoy working with the most is <span class="skill-bold">Javascript</span> because of how flexible and fluid it is compared to something like <span class="skill-bold">Java</span> or <span class="skill-bold">C</span> that I came from
+                             following a traditional college path. While a lot of my Javascript is displayed in <span class="skill-bold">jQuery</span> or <span class="skill-bold">AJAX</span> for simple things, building
+                             even half finished projects in pure Javascript is enjoyable. I love delving into a language and figuring out how to get the most out of it.
+                        </p>
+                        <p>
+                            While my interest is in front-end development, I've also had to explore the back-end side to get websites up and running. I used <span class="skill-bold">node.js</span> with <span class="skill-bold">Express</span>
+                             and while I have a little experience with PHP and MySQL, most of my serious websites have used <span class="skill-bold">MongoDB</span> and <span class="skill-bold">Mongoose</span> to store and retrieve data.
+                             While working with back-end I started using <span class="skill-bold">Jade</span> and while it does make the code look cleaner and cuts down on a lot of repetition, most of the time it's simple HTML that I use on
+                             the front-end.
+                        </p>
                     </div>
 
                 </div>
                 <div class="information-body" id="projects-body">
+                    <a class="github-link" href="http://github.com/IanBarkerDev/" target="_blank">Overall <i class="fa fa-github"></i> Profile</a>
                     <div class="projects">
                         <div class="ind-project">
-                            <p class="ind-project-title">Night Life App</p>
-                            <img class="ind-project-img" src="" alt="">
-                            <a class="ind-project-repo-link" href=""><i class="fa fa-github"></i>Repository</a>
+                            <img class="ind-project-img ind-project-segment" src="" alt="">
+                            <div class="ind-project-info ind-project-segment">
+                                <p class="ind-project-title">Night Life App</p>
+                                <p class="ind-project-desc">A single page application where I built the backend on node.js with a MongoDB database to store information
+                                    and (based on user searches) interacted with Yelp! API for information about local bars. Users can see how many other people
+                                    are attending an event and add themselves to the list of attendees.</p>
+                                <a class="ind-project-repo-link" href="https://github.com/IanBarkerDev/nightlife-app"><i class="fa fa-github"></i>   Repository</a>
+                            </div>
                         </div>
                         <div class="ind-project">
-                            <p class="ind-project-title">Book Club</p>
-                            <a href="http://warm-harbor-6326.herokuapp.com" target="_blank"><img class="ind-project-img" src="BookClubScreen.png" alt="Book Club"></a>
-                            <a class="ind-project-repo-link" href="https://github.com/IanBarkerDev/bookclub.git" target="_blank"><i class="fa fa-github"></i>Repository</a>
+                            <a class="ind-project-segment" href="http://warm-harbor-6326.herokuapp.com" target="_blank"><img class="ind-project-img" src="BookClubScreen.png" alt="Book Club"></a>
+                            <div class="ind-project-info ind-project-segment">
+                                <p class="ind-project-title">Book Club</p>
+                                <p class="ind-project-desc">A website that allows users to both add books to their personal collection and to request trades with other users. Searches
+                                 can be made based on username, author, or ISBN number. Back-end is node.js and Express with MongoDB and Mongoose. Front-end is standard HTML, CSS, Javascript.</p>
+                                <a class="ind-project-repo-link" href="https://github.com/IanBarkerDev/bookclub"><i class="fa fa-github"></i>   Repository</a>
+                            </div>
                         </div>
                         <div class="ind-project">
-                            <p class="ind-project-title">Voting App</p>
-                            <a href="http://http://boiling-bastion-5520.herokuapp.com" target="_blank"><img class="ind-project-img" src="VotingAppScreenShot.png" alt="Voting App"></a>
-                            <a class="ind-project-repo-link" href="https://github.com/IanBarkerDev/votingapp" target="_blank"><i class="fa fa-github"></i>Repository</a>
+                            <a class="ind-project-segment" href="http://http://boiling-bastion-5520.herokuapp.com" target="_blank"><img class="ind-project-img" src="VotingAppScreenShot.png" alt="Voting App"></a>
+                            <div class="ind-project-info ind-project-segment">
+                                <p class="ind-project-title">Voting App</p>
+                                <p class="ind-project-desc">A place for users to create polls that anyone can vote on. Results are viewed with Google Graphs. First website that I built
+                                 where I knew how to use the tools that I would use going in. Still managed to realize that I knew nothing.</p>
+                                <a class="ind-project-repo-link" href="https://github.com/IanBarkerDev/votingapp"><i class="fa fa-github"></i>   Repository</a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="information-body" id="contact-body">
                     <p>Get In Touch With Me!</p>
-                    <a href="mailto:ibarker94@yahoo.com">Via Email</a>
+                    <a href="mailto:ibarker94@yahoo.com">Via Email <i class="fa fa-envelope"></i></a>
+                    <a class="github-link" href="http://github.com/IanBarkerDev/" target="_blank">Via Github <i class="fa fa-github"></i></a>
                 </div>
             </div>
         </div>
@@ -137,7 +114,7 @@
     var isMoved = false;
     $(document).ready(function() {
 
-        $(".main-button").on("click", function() {
+        $(".menu-button").on("click", function() {
             var id, idBody;
 
             id = $(this).attr("id");
@@ -146,7 +123,7 @@
             idBody = "#" + id + "-body";
 
             if(!isMoved) {
-                $(".menu-buttons").css("animation", "menuSlideLeft 1.5s linear forwards");
+                $(".menu-buttons").css("animation", "menuSlideUp 1.5s linear forwards");
                 setTimeout(function() {
                     updateBodies(idBody)
                 }, 1500);
@@ -154,7 +131,7 @@
             } else {
                 if($(idBody).css("display") === "block") {
                     $(idBody).css("display", "none");
-                    $(".menu-buttons").css("animation", "menuSlideRight 1.5s linear forwards");
+                    $(".menu-buttons").css("animation", "menuSlideDown 1.5s linear forwards");
                     isMoved = false;
                 } else {
                     updateBodies(idBody);
@@ -164,33 +141,6 @@
 
 
         });
-
-        $(".navbar-toggle").on("click", function() {
-            var id, idBody;
-
-            id = $(this).attr("id");
-            id = id.slice(0, id.length - 4);
-
-            idBody = "#" + id + "-body";
-
-            if(!isMoved) {
-                $(".menu-buttons").css("animation", "menuSlideLeft 1.5s linear forwards");
-                setTimeout(function() {
-                    updateBodies(idBody)
-                }, 1500);
-                isMoved = true;
-            } else {
-                if($(idBody).css("display") === "block") {
-                    $(idBody).css("display", "none");
-                    $(".menu-buttons").css("animation", "menuSlideRight 1.5s linear forwards");
-                    isMoved = false;
-                } else {
-                    updateBodies(idBody);
-                }
-            }
-
-
-        })
     });
 
     function updateBodies(idBody) {

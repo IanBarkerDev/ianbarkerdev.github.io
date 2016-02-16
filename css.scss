@@ -1,208 +1,221 @@
-@font-face {
-  font-family: aileron;
-  src: url(Aileron-Regular.otf);
-}
+$font-name: "Droid Sans", sans-serif;
+$font-title: "Oxygen", sans-serif;
+$font-info: "Lora", serif;
 
-/* navbar */
+body {
+  background-image: linear-gradient(to left,#91C367 0%, #BEE59E 50%, #91C367 100%);
+  #body {
 
-.navbar {
-  height: 4vh;
-  margin: 0;
-  border: none;
-}
-
-.navbar-header, .navbar-collapse {
-  background-color: #000;
-  color: #fff;
-  padding: 0 15px;
-}
-
-.navbar-brand {
-  color: #fff !important;
-
-  &:hover {
-    cursor: default !important;
-  }
-}
-
-#navbar {
-  padding: 0;
-  font-family: aileron, sans-serif;
-}
-
-.navbar-toggle {
-  border: none;
-  margin: 8px 7px;
-}
-
-.navbar-toggle:hover, .navbar-brand:hover {
-  cursor: pointer;
-  color: #ffd700;
-  background: none !important;
-}
-
-.navbar-toggle-break {
-  margin: 10px 0 8px 0;
-  font-size: 22px;
-}
-
-/* body */
-
-#body {
-  height: 96vh;
-  text-align: center;
-  font-family: aileron, sans-serif;
-  background-image: linear-gradient(to left, #AEB79A 0%, #DBE2CD 50%, #AEB79A 100%);
-}
-
-.name-title {
-  margin: 10vh auto 10vh auto;
-}
-
-.name {
-  font-size: 50px;
-}
-
-.title {
-  font-size: 35px;
-}
-
-.buttons-information {
-  position: relative;
-}
-
-.menu-buttons {
-  width: 200px;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.menu-button {
-  width: 200px;
-  height: 100px;
-
-  background-color: #000;
-  color: #fff;
-
-  margin: 10px;
-  font-size: 18px;
-
-  border: 1px outset #9D94A1;
-}
-
-.menu-button:hover {
-  color: #ffd700;
-  font-size: 24px;
-}
-
-
-.information {
-  position: absolute;
-  left: 190px;
-  top: 0;
-  font-size: 18px;
-  padding: 50px;
-  text-align: left;
-}
-
-.information-body {
-  border: 3px solid #312139;
-  background-color: #9D94A1;
-  height: 400px;
-  width: 850px;
-  padding: 15px;
-  font-family: aileron, sans-serif;
-  font-size: 20px;
-  display: none;
-  line-height: 24px;
-  color: #000;
-  margin: 0 auto;
-
-  p {
-    margin: 45px auto;
-  }
-
-  .first-letter {
-    line-height: 24px;
-    font-size: 60px;
-  }
-
-  &#skills-body {
-    .ind-skill {
-      height: 120px;
-      width: 150px;
-      margin: 10px;
-      position: relative;
-      display: inline-block;
-
-      .text {
-        position: absolute;
-        bottom: 0;
-        font-size: 24px;
-        margin: 0 auto;
+    font-size: 16px;
+    text-align: center;
+    .name-title {
+      margin: 5rem auto 10rem auto;
+      .name {
+        font-size: 60px;
+        font-family: $font-name;
       }
 
-      .icon {
+      .title {
+        font-size: 45px;
+        font-family: $font-title;
+      }
+    }
+
+    .buttons-information {
+      margin-top: 20rem;
+      height: 100%;
+      //min-height: 75vh;
+
+      .menu-buttons {
+        padding: 1rem;
+        width: 100%;
+        height: 12rem;
         position: absolute;
-        top: 0;
-        font-size: 100px;
-        margin-bottom: 10px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .menu-button {
+          width: 15rem;
+          height: 10rem;
+          background-color: #B16040;
+          color: #fff;
+          border: 2px outset #7995AB;
+          margin: 0 1rem;
+          font-size: 24px;
+          font-style: italic;
+
+          &:hover {
+            color: yellow;
+            font-size: 200%;
+            vertical-align: top;
+          }
+        }
+      }
+
+      .information {
+        height: inherit;
+        min-height: inherit;
+
+        .information-body {
+          border-radius: 1em 1em 1em 1em;
+          display: none;
+          padding: 3rem;
+          height: inherit;
+          min-height: inherit;
+          background-color: #fff;
+          font-size: 24px;
+          font-family: $font-info;
+          font-style: italic;
+
+          .github-link {
+            color: #2E5472;
+            font-style: normal;
+            font-size: 36px;
+            &:hover, &:hover > .fa-github {
+              text-decoration: underline;
+              color: #153A57;
+            }
+
+          }
+
+          &#about-body {
+            text-align: left;
+            height: inherit;
+            min-height: inherit;
+            border-radius: 1em;
+
+            .about-body-p {
+              background-color: #FFD9B0;
+              height: inherit;
+              min-height: inherit;
+              border-radius: 1em;
+              padding: 1em;
+
+              .about-body-name {
+                text-align: center;
+                font-size: 24px;
+                font-weight: 700;
+                font-style: normal;
+              }
+            }
+          }
+
+          &#skills-body {
+            .skill-body-list {
+
+              background-color: #FFD9B0;
+              border-radius: 1em;
+              padding: 1em;
+              text-align: left;
+
+              p {
+                .skill-bold {
+                  font-style: normal;
+                  font-weight: 800;
+                }
+              }
+            }
+          }
+
+          &#projects-body {
+
+
+            .ind-project {
+              background-color: #FFD9B0;
+              position: relative;
+              border: 2px solid #000;
+              border-radius: 1rem;
+              min-height: 18rem;
+              margin: .5em auto;
+
+              @media (max-width: 1200px) {
+                height: 22rem;
+              }
+
+              .ind-project-title {
+                text-align: center;
+                top: .5em;
+                font-weight: 700;
+                padding-right: 9em;
+                font-size: 20px;
+
+              }
+
+              .ind-project-segment {
+                display: inline-block;
+
+                .ind-project-img {
+                  width: 18rem;
+                  height: 100%;
+                  left: 0;
+                  top: 0;
+                  position: absolute;
+                  border-radius: 1rem 0 0 1rem;
+                }
+
+                &.ind-project-info {
+                  margin: 0 2rem 2rem 2rem;
+                  padding-left: 18rem;
+                  font-size: 16px;
+
+                  .ind-project-repo-link {
+                    padding-right: 11em;
+                    &:hover, &:hover > .fa-github {
+                      text-decoration: underline;
+
+                    }
+                  }
+                }
+
+
+              }
+
+            }
+          }
+
+          &#contact-body {
+            font-size: 24px;
+
+            p {
+              font-size: 36px;
+            }
+            a {
+              color: #337ab7;
+              display: block;
+              font-size: 24px;
+              font-style: italic;
+              margin: 2rem;
+
+              &:hover, &:hover > .fa {
+                color: #23527c;
+                text-decoration: underline;
+              }
+            }
+          }
+        }
       }
     }
   }
 }
 
-.ind-project {
-  width: 200px;
-  height: 200px;
-  display: inline-block;
-  margin: 5px 10px;
-}
 
-.ind-project-img {
-  width: 200px;
-  height: 170px;
-}
-
-.ind-project-title {
-  width: 200px;
-  height: 15px;
-  text-align: center;
-}
-
-.ind-project-repo-link {
-  width: 200px;
-  height: 15px;
-  margin: 0 auto;
-  font-size: 14px;
-  display: block;
-  text-align: center;
-}
-
-.ind-project-repo-link i {
-  margin: 0 10px;
-}
-
-
-@keyframes menuSlideLeft {
+@keyframes menuSlideUp {
   0% {
-    left: 50%;
+    top: 50%;
   }
 
   100% {
-    left: 0;
+    top: 28rem;
   }
-
 }
 
-@keyframes menuSlideRight {
+@keyframes menuSlideDown {
   0% {
-    left: 0;
+    top: 28rem;
   }
 
   100% {
-    left: 50%;
+    top: 50%;
   }
 }
