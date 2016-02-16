@@ -70,6 +70,32 @@ body {
 
           &#about-body {
             text-align: left;
+            height: inherit;
+            min-height: inherit;
+
+            .about-body-p {
+              background-color: #FFD9B0;
+              height: inherit;
+              min-height: inherit;
+              border-radius: 1em;
+              padding: 1em;
+
+              .about-body-name {
+                text-align: center;
+                font-size: 24px;
+                font-weight: 700;
+              }
+            }
+          }
+
+          &#skills-body {
+            .skill-body-list {
+              p {
+                .skill-bold {
+                  font-weight: 800;
+                }
+              }
+            }
           }
 
           &#projects-body {
@@ -89,8 +115,10 @@ body {
 
               .ind-project-title {
                 text-align: center;
-                top: 1em;
+                top: .5em;
                 font-weight: 700;
+                padding-right: 11em;
+
               }
 
               .ind-project-segment {
@@ -110,6 +138,7 @@ body {
                   font-size: 16px;
 
                   .ind-project-repo-link {
+                    padding-right: 11em;
                     &:hover, &:hover > .fa-github {
                       text-decoration: underline;
 
