@@ -1,3 +1,7 @@
+$font-name: "Droid Sans", sans-serif;
+$font-title: "Oxygen", sans-serif;
+$font-info: "Lora", serif;
+
 body {
   background-image: linear-gradient(to left,#91C367 0%, #BEE59E 50%, #91C367 100%);
   #body {
@@ -8,17 +12,19 @@ body {
       margin: 5rem auto 10rem auto;
       .name {
         font-size: 60px;
+        font-family: $font-name;
       }
 
       .title {
         font-size: 45px;
+        font-family: $font-title;
       }
     }
 
     .buttons-information {
       margin-top: 20rem;
       height: 100%;
-      min-height: 50vh;
+      //min-height: 75vh;
 
       .menu-buttons {
         padding: 1rem;
@@ -37,6 +43,7 @@ body {
           border: 2px outset #7995AB;
           margin: 0 1rem;
           font-size: 24px;
+          font-style: italic;
 
           &:hover {
             color: yellow;
@@ -51,19 +58,23 @@ body {
         min-height: inherit;
 
         .information-body {
-          border-radius: 5em;
+          border-radius: 1em 1em 1em 1em;
           display: none;
           padding: 3rem;
           height: inherit;
           min-height: inherit;
-          background-color: #B17B40;
-          font-size: 20px;
+          background-color: #fff;
+          font-size: 24px;
+          font-family: $font-info;
+          font-style: italic;
 
           .github-link {
-            color: #fff;
+            color: #2E5472;
+            font-style: normal;
+            font-size: 36px;
             &:hover, &:hover > .fa-github {
               text-decoration: underline;
-              color: #E5E5E5;
+              color: #153A57;
             }
 
           }
@@ -72,6 +83,7 @@ body {
             text-align: left;
             height: inherit;
             min-height: inherit;
+            border-radius: 1em;
 
             .about-body-p {
               background-color: #FFD9B0;
@@ -84,14 +96,22 @@ body {
                 text-align: center;
                 font-size: 24px;
                 font-weight: 700;
+                font-style: normal;
               }
             }
           }
 
           &#skills-body {
             .skill-body-list {
+
+              background-color: #FFD9B0;
+              border-radius: 1em;
+              padding: 1em;
+              text-align: left;
+
               p {
                 .skill-bold {
+                  font-style: normal;
                   font-weight: 800;
                 }
               }
@@ -106,7 +126,7 @@ body {
               position: relative;
               border: 2px solid #000;
               border-radius: 1rem;
-              height: 18rem;
+              min-height: 18rem;
               margin: .5em auto;
 
               @media (max-width: 1200px) {
@@ -117,7 +137,8 @@ body {
                 text-align: center;
                 top: .5em;
                 font-weight: 700;
-                padding-right: 11em;
+                padding-right: 9em;
+                font-size: 20px;
 
               }
 
@@ -134,7 +155,8 @@ body {
                 }
 
                 &.ind-project-info {
-                  margin: 0 2rem 2rem 20rem;
+                  margin: 0 2rem 2rem 2rem;
+                  padding-left: 18rem;
                   font-size: 16px;
 
                   .ind-project-repo-link {
@@ -149,6 +171,26 @@ body {
 
               }
 
+            }
+          }
+
+          &#contact-body {
+            font-size: 24px;
+
+            p {
+              font-size: 36px;
+            }
+            a {
+              color: #337ab7;
+              display: block;
+              font-size: 24px;
+              font-style: italic;
+              margin: 2rem;
+
+              &:hover, &:hover > .fa {
+                color: #23527c;
+                text-decoration: underline;
+              }
             }
           }
         }
