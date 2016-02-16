@@ -61,13 +61,11 @@ body {
 
           .github-link {
             color: #fff;
-            &:hover {
+            &:hover, &:hover > .fa-github {
               text-decoration: underline;
+              color: #E5E5E5;
             }
 
-            &:hover > .fa-github {
-              text-decoration: underline;
-            }
           }
 
           &#about-body {
@@ -112,8 +110,9 @@ body {
                   font-size: 16px;
 
                   .ind-project-repo-link {
-                    &:hover > .fa-github {
+                    &:hover, &:hover > .fa-github {
                       text-decoration: underline;
+
                     }
                   }
                 }
