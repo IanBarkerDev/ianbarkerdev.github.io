@@ -72,11 +72,11 @@
 }
 
 .menu-buttons {
-  width: 200px;
+
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 }
 
 .menu-button {
@@ -90,6 +90,7 @@
   font-size: 18px;
 
   border: 1px outset #9D94A1;
+  display: inline-block;
 }
 
 .menu-button:hover {
