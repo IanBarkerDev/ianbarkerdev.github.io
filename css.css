@@ -1,0 +1,140 @@
+body {
+  background-image: linear-gradient(to left, #91C367 0%, #BEE59E 50%, #91C367 100%); }
+  body #body {
+    font-size: 16px;
+    text-align: center; }
+    body #body .name-title {
+      margin: 5rem auto 10rem auto; }
+      body #body .name-title .name {
+        font-size: 60px;
+        font-family: "Droid Sans", sans-serif; }
+      body #body .name-title .title {
+        font-size: 45px;
+        font-family: "Oxygen", sans-serif; }
+    body #body .buttons-information {
+      margin-top: 20rem;
+      height: 100%; }
+      body #body .buttons-information .menu-buttons {
+        padding: 1rem;
+        width: 100%;
+        height: 12rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+        body #body .buttons-information .menu-buttons .menu-button {
+          width: 15rem;
+          height: 10rem;
+          background-color: #B16040;
+          color: #fff;
+          border: 2px outset #7995AB;
+          margin: 0 1rem;
+          font-size: 24px;
+          font-style: italic; }
+          body #body .buttons-information .menu-buttons .menu-button:hover {
+            color: yellow;
+            font-size: 200%;
+            vertical-align: top; }
+      body #body .buttons-information .information {
+        height: inherit;
+        min-height: inherit; }
+        body #body .buttons-information .information .information-body {
+          border-radius: 1em 1em 1em 1em;
+          display: none;
+          padding: 3rem;
+          height: inherit;
+          min-height: inherit;
+          background-color: #fff;
+          font-size: 24px;
+          font-family: "Lora", serif;
+          font-style: italic; }
+          body #body .buttons-information .information .information-body .github-link {
+            color: #2E5472;
+            font-style: normal;
+            font-size: 36px; }
+            body #body .buttons-information .information .information-body .github-link:hover, body #body .buttons-information .information .information-body .github-link:hover > .fa-github {
+              text-decoration: underline;
+              color: #153A57; }
+          body #body .buttons-information .information .information-body#about-body {
+            text-align: left;
+            height: inherit;
+            min-height: inherit;
+            border-radius: 1em; }
+            body #body .buttons-information .information .information-body#about-body .about-body-p {
+              background-color: #FFD9B0;
+              height: inherit;
+              min-height: inherit;
+              border-radius: 1em;
+              padding: 1em; }
+              body #body .buttons-information .information .information-body#about-body .about-body-p .about-body-name {
+                text-align: center;
+                font-size: 24px;
+                font-weight: 700;
+                font-style: normal; }
+          body #body .buttons-information .information .information-body#skills-body .skill-body-list {
+            background-color: #FFD9B0;
+            border-radius: 1em;
+            padding: 1em;
+            text-align: left; }
+            body #body .buttons-information .information .information-body#skills-body .skill-body-list p .skill-bold {
+              font-style: normal;
+              font-weight: 800; }
+          body #body .buttons-information .information .information-body#projects-body .ind-project {
+            background-color: #FFD9B0;
+            position: relative;
+            border: 2px solid #000;
+            border-radius: 1rem;
+            min-height: 18rem;
+            margin: .5em auto; }
+            @media (max-width: 1200px) {
+              body #body .buttons-information .information .information-body#projects-body .ind-project {
+                height: 22rem; } }
+            body #body .buttons-information .information .information-body#projects-body .ind-project .ind-project-title {
+              text-align: center;
+              top: .5em;
+              font-weight: 700;
+              padding-right: 9em;
+              font-size: 20px; }
+            body #body .buttons-information .information .information-body#projects-body .ind-project .ind-project-segment {
+              display: inline-block; }
+              body #body .buttons-information .information .information-body#projects-body .ind-project .ind-project-segment .ind-project-img {
+                width: 18rem;
+                height: 100%;
+                left: 0;
+                top: 0;
+                position: absolute;
+                border-radius: 1rem 0 0 1rem; }
+              body #body .buttons-information .information .information-body#projects-body .ind-project .ind-project-segment.ind-project-info {
+                margin: 0 2rem 2rem 2rem;
+                padding-left: 18rem;
+                font-size: 16px; }
+                body #body .buttons-information .information .information-body#projects-body .ind-project .ind-project-segment.ind-project-info .ind-project-repo-link {
+                  padding-right: 11em; }
+                  body #body .buttons-information .information .information-body#projects-body .ind-project .ind-project-segment.ind-project-info .ind-project-repo-link:hover, body #body .buttons-information .information .information-body#projects-body .ind-project .ind-project-segment.ind-project-info .ind-project-repo-link:hover > .fa-github {
+                    text-decoration: underline; }
+          body #body .buttons-information .information .information-body#contact-body {
+            font-size: 24px; }
+            body #body .buttons-information .information .information-body#contact-body p {
+              font-size: 36px; }
+            body #body .buttons-information .information .information-body#contact-body a {
+              color: #337ab7;
+              display: block;
+              font-size: 24px;
+              font-style: italic;
+              margin: 2rem; }
+              body #body .buttons-information .information .information-body#contact-body a:hover, body #body .buttons-information .information .information-body#contact-body a:hover > .fa {
+                color: #23527c;
+                text-decoration: underline; }
+
+@keyframes menuSlideUp {
+  0% {
+    top: 50%; }
+  100% {
+    top: 28rem; } }
+@keyframes menuSlideDown {
+  0% {
+    top: 28rem; }
+  100% {
+    top: 50%; } }
+
+/*# sourceMappingURL=css.css.map */
