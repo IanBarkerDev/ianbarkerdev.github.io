@@ -5,8 +5,8 @@
     <title>Ian Barker | Web Development</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Oxygen|Lora:400,700' rel='stylesheet' type='text/css'>    <link rel="stylesheet" href="css.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Oxygen|Lora:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css.css">
 
 </head>
 <body>
@@ -28,7 +28,7 @@
             <div class="information">
                 <div class="information-body" id="about-body">
                     <div class="about-body-p">
-                        <p class="about-body-name">Ian Barker</p>
+                        <p class="about-body-name">About</p>
                         <p>
                             I am a senior at Knox College with a major in Computer Science and a minor in Mathematics.
                             I drifted through the Computer Science program for a while working with Java and C before stumbling
@@ -45,6 +45,10 @@
                 </div>
                 <div class="information-body" id="skills-body">
                     <div class="skill-body-list">
+                        <p class="skills-body-name">Skills</p>
+                        <div class="skill-imgs">
+                            <div class="skill-img"
+                        </div>
                         <p>
                             I enjoy working with <span class="skill-bold">HTML5</span> and <span class="skill-bold">CSS3</span> everyday. With HTML it's about being better organized and designing things
                          better so that my CSS is better. With CSS (and recently exploring SASS), it's more about learning how little I know. Every day I find some cool new concept
@@ -109,38 +113,57 @@
     </div>
 </div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script type="text/javascript">
     var infoBodies = ["#about-body", "#skills-body", "#projects-body", "#contact-body"];
     var isMoved = false;
     $(document).ready(function() {
 
-        $(".menu-button").on("click", function() {
-            var id, idBody;
+        if(window.innerWidth > 1000) {
+            $(".menu-button").on("click", function() {
+                var id, idBody;
 
-            id = $(this).attr("id");
-            id = id.slice(0, id.length - 5);
+                id = $(this).attr("id");
+                id = id.slice(0, id.length - 5);
 
-            idBody = "#" + id + "-body";
+                idBody = "#" + id + "-body";
 
-            if(!isMoved) {
-                $(".menu-buttons").css("animation", "menuSlideUp 1.5s linear forwards");
-                setTimeout(function() {
-                    updateBodies(idBody)
-                }, 1500);
-                isMoved = true;
-            } else {
+                if(!isMoved) {
+                    $(".menu-buttons").css("animation", "menuSlideUp 1.5s linear forwards");
+                    setTimeout(function() {
+                        updateBodies(idBody)
+                    }, 1500);
+                    isMoved = true;
+                } else {
+                    if($(idBody).css("display") === "block") {
+                        $(idBody).css("display", "none");
+                        $(".menu-buttons").css("animation", "menuSlideDown 1.5s linear forwards");
+                        isMoved = false;
+                    } else {
+                        updateBodies(idBody);
+                    }
+                }
+
+
+
+            });
+        } else {
+            $(".menu-button").on("click", function() {
+                var id, idBody;
+
+                id = $(this).attr("id");
+                id = id.slice(0, id.length - 5);
+
+                idBody = "#" + id + "-body";
+
                 if($(idBody).css("display") === "block") {
                     $(idBody).css("display", "none");
-                    $(".menu-buttons").css("animation", "menuSlideDown 1.5s linear forwards");
-                    isMoved = false;
                 } else {
                     updateBodies(idBody);
                 }
-            }
+            })
+        }
 
-
-
-        });
     });
 
     function updateBodies(idBody) {

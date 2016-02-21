@@ -108,6 +108,14 @@ body {
               padding: 1em;
               text-align: left;
 
+              .skills-body-name {
+                text-align: center;
+                font-size: 24px;
+                font-weight: 700;
+                font-style: normal;
+              }
+
+
               p {
                 .skill-bold {
                   font-style: normal;
@@ -127,10 +135,6 @@ body {
               border-radius: 1rem;
               min-height: 18rem;
               margin: .5em auto;
-
-              @media (max-width: 1200px) {
-                height: 22rem;
-              }
 
               .ind-project-title {
                 text-align: center;
@@ -198,7 +202,6 @@ body {
   }
 }
 
-
 @keyframes menuSlideUp {
   0% {
     top: 50%;
@@ -218,3 +221,73 @@ body {
     top: 50%;
   }
 }
+
+@media (min-width: 320px) and (max-width: 1000px) {
+  body {
+    #body {
+      .buttons-information {
+        margin-top: 1em;
+        .menu-buttons {
+          position: relative;
+          margin: 0 auto 1em auto;
+          height: auto;
+          width: auto;
+          left: 50%;
+          top: 0;
+          transform: translateX(-50%);
+          .menu-button {
+            display: block;
+            margin: .1em auto;
+
+          }
+        }
+
+        .information {
+          .information-body {
+            font-size: 18px;
+
+            &#projects-body {
+              width: auto;
+              height: auto;
+
+              .ind-project {
+                .ind-project-segment {
+                  .ind-project-img {
+                    width: 100%;
+                    height: auto;
+                    position: static;
+                    border-radius: .9rem .9rem 0 0;
+                  }
+
+                  &.ind-project-info {
+                    position: static;
+                    width: 100%;
+                    text-align: center;
+                    height: auto;
+                    margin: 0;
+                    padding: .5em;
+
+                    .ind-project-repo-link {
+                      padding: 0;
+                      text-align: center;
+                    }
+
+                    .ind-project-title {
+                      position: static;
+                      text-align: center;
+                      padding: 0;
+                      margin: 0;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+

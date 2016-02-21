@@ -76,6 +76,11 @@ body {
             border-radius: 1em;
             padding: 1em;
             text-align: left; }
+            body #body .buttons-information .information .information-body#skills-body .skill-body-list .skills-body-name {
+              text-align: center;
+              font-size: 24px;
+              font-weight: 700;
+              font-style: normal; }
             body #body .buttons-information .information .information-body#skills-body .skill-body-list p .skill-bold {
               font-style: normal;
               font-weight: 800; }
@@ -86,9 +91,6 @@ body {
             border-radius: 1rem;
             min-height: 18rem;
             margin: .5em auto; }
-            @media (max-width: 1200px) {
-              body #body .buttons-information .information .information-body#projects-body .ind-project {
-                height: 22rem; } }
             body #body .buttons-information .information .information-body#projects-body .ind-project .ind-project-title {
               text-align: center;
               top: .5em;
@@ -136,5 +138,44 @@ body {
     top: 28rem; }
   100% {
     top: 50%; } }
+@media (min-width: 320px) and (max-width: 1000px) {
+  body #body .buttons-information {
+    margin-top: 1em; }
+    body #body .buttons-information .menu-buttons {
+      position: relative;
+      margin: 0 auto 1em auto;
+      height: auto;
+      width: auto;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%); }
+      body #body .buttons-information .menu-buttons .menu-button {
+        display: block;
+        margin: .1em auto; }
+    body #body .buttons-information .information .information-body {
+      font-size: 18px; }
+      body #body .buttons-information .information .information-body#projects-body {
+        width: auto;
+        height: auto; }
+        body #body .buttons-information .information .information-body#projects-body .ind-project .ind-project-segment .ind-project-img {
+          width: 100%;
+          height: auto;
+          position: static;
+          border-radius: .9rem .9rem 0 0; }
+        body #body .buttons-information .information .information-body#projects-body .ind-project .ind-project-segment.ind-project-info {
+          position: static;
+          width: 100%;
+          text-align: center;
+          height: auto;
+          margin: 0;
+          padding: .5em; }
+          body #body .buttons-information .information .information-body#projects-body .ind-project .ind-project-segment.ind-project-info .ind-project-repo-link {
+            padding: 0;
+            text-align: center; }
+          body #body .buttons-information .information .information-body#projects-body .ind-project .ind-project-segment.ind-project-info .ind-project-title {
+            position: static;
+            text-align: center;
+            padding: 0;
+            margin: 0; } }
 
 /*# sourceMappingURL=css.css.map */
