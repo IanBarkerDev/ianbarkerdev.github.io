@@ -140,7 +140,8 @@ body {
                 left: 0;
                 top: 0;
                 position: absolute;
-                border-radius: 1rem 0 0 1rem; }
+                border-radius: 1rem 0 0 1rem;
+                border-right: 1px solid #000; }
               body #body .buttons-information .information .information-body#projects-body .ind-project .ind-project-segment.ind-project-info {
                 margin: 0 2rem 2rem 2rem;
                 padding-left: 18rem;
