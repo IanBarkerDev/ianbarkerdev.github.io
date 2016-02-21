@@ -199,7 +199,8 @@ body {
           width: 100%;
           height: auto;
           position: static;
-          border-radius: .9rem .9rem 0 0; }
+          border-radius: .9rem .9rem 0 0;
+          border-bottom: 1px solid #000; }
         body #body .buttons-information .information .information-body#projects-body .ind-project .ind-project-segment.ind-project-info {
           position: static;
           width: 100%;
