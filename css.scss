@@ -115,6 +115,72 @@ body {
                 font-style: normal;
               }
 
+              ul.skills-images {
+                list-style-type: none;
+                margin: 0 auto 10px auto;
+                $skillImgPadd: 10px;
+                padding-left: 0;
+
+                width: 600 + (5 * $skillImgPadd);
+
+
+                li {
+                  padding: 0 10px;
+                  background: url(languages-sprite.png) no-repeat;
+                  height: 100px;
+                  width: 100px;
+                  display: inline-block;
+
+                  &#html5 {
+                    background-position: -165px -10px;
+                  }
+
+                  &#css3 {
+                    background-position: -269px -13px;
+                  }
+
+                  &#bootstrap {
+                    background-position: -377px -14.5px;
+                  }
+
+                  &#javascript {
+                    background-position: -327px -248px;
+                  }
+
+                  &#sass {
+                    background-position: -227px -248px;
+                  }
+
+                  &#jquery {
+                    background-position: -55px -12px;
+                  }
+
+                  &#ajax {
+                    background-position: -267px -130px;
+                  }
+
+                  &#node {
+                    background-position: -48px -127px;
+                  }
+
+                  &#mongo {
+                    background-position: -485px -127px;
+                  }
+
+                  &#jade {
+                    background-position: -153px -130px;
+                  }
+
+                  &#git {
+                    background-position: -485px -15px;
+                  }
+
+                  &#java {
+                    background-position: -379px -127px;
+                  }
+
+                }
+              }
 
               p {
                 .skill-bold {
@@ -246,6 +312,15 @@ body {
           .information-body {
             font-size: 18px;
 
+
+            &#skills-body {
+              .skill-body-list {
+                ul.skills-images {
+                  width: 210px;
+                }
+              }
+            }
+
             &#projects-body {
               width: auto;
               height: auto;
@@ -289,5 +364,24 @@ body {
   }
 }
 
+@media (max-width: 320px) {
+  body {
+    #body {
+      .buttons-information {
+        .information {
+          .information-body {
+            &#skills-body {
+              .skill-body-list {
+                ul.skills-images {
+                  width: 110px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 
