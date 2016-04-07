@@ -3,193 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <title>Ian Barker | Web Development</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Oxygen|Lora:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css.css">
-
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Josefin+Sans:700italic,400' rel='stylesheet' type='text/css'>    <link rel="stylesheet" href="css.css">
 </head>
 <body>
-
-<div class="container-fluid" id="body">
-    <div class="container">
-        <div class="name-title">
-            <h1 class="name">IAN BARKER</h1>
-            <h5 class="title">Jr. Web Developer</h5>
-        </div>
-        <div class="buttons-information">
-            <div class="menu-buttons">
-                <button class="menu-button" id="about-menu">About</button>
-                <button class="menu-button" id="skills-menu">Skills</button>
-                <button class="menu-button" id="projects-menu">Projects</button>
-                <button class="menu-button" id="contact-menu">Contact</button>
+<section id="intro">
+    <div class="centered">
+        <h1>Ian Barker</h1>
+        <p></p>
+        <h3>Junior Web Developer</h3>
+    </div>
+</section>
+<section id="portfolio">
+    <div class="website">
+        <img class="website-img" src="BookClubScreenShot.png" alt=""/>
+        <div class="website-info">
+            <p class="website-title">Book Club</p>
+            <div class="website-tools">
+                <span class="website-tool">Jade</span>
+                <span class="website-tool">CSS3</span>
+                <span class="website-tool">Javascript</span>
+                <span class="website-tool">jQuery</span>
+                <span class="website-tool">Node</span>
+                <span class="website-tool">Express</span>
             </div>
-
-            <div class="information">
-                <div class="information-body" id="about-body">
-                    <div class="about-body-p">
-                        <p class="about-body-name">About</p>
-                        <p>
-                            I am a Senior at Knox College (graduating in June 2016) with a major in Computer Science and a minor in Mathematics.
-                             I drifted through the Computer Science program for a while working with Java and C before taking Software Engineering my Junior year where my team
-                             built a website. That project was a blast, but looking back at it now, I barely understand the choices that we made. Everything was very thrown together
-                             which is the opposite of a good product because planning is key. I really enjoy planning out a website before actually writing it in HTML5 and CSS3.
-                             Both of those languages are really enjoyable for me because I feel like I can interact with the product more and thus the user's experience.
-                             For me, the best part of developing is working out bugs and trying to make things just a
-                             little bit better. Web development is a place where I feel like creativity and problem solving come together for a fulfilling experience.
-                        </p>
-                        <p>
-                            I've always tended to enjoy things with a high skill cap and incredible depth. Whether it's web development's extensive number of languages and frameworks
-                             or a game with deep seated strategy and a massive base of knowledge, I enjoy working my way through multiple failures until I can uncover the best strategies and features.
-                        </p>
-                    </div>
-
-                </div>
-                <div class="information-body" id="skills-body">
-                    <div class="skill-body-list">
-                        <p class="skills-body-name">Skills</p>
-                        <ul class="skills-images">
-                            <li class="skills-img" id="html5"></li>
-                            <li class="skills-img" id="css3"></li>
-                            <li class="skills-img" id="sass"></li>
-                            <li class="skills-img" id="bootstrap"></li>
-                            <li class="skills-img" id="javascript"></li>
-                            <li class="skills-img" id="jquery"></li>
-                            <li class="skills-img" id="ajax"></li>
-                            <li class="skills-img" id="node"></li>
-                            <li class="skills-img" id="mongo"></li>
-                            <li class="skills-img" id="jade"></li>
-                            <li class="skills-img" id="git"></li>
-                            <li class="skills-img" id="java"></li>
-                        </ul>
-                        <p>
-                            I enjoy working with <span class="skill-bold">HTML5</span> and <span class="skill-bold">CSS3</span> every day. With HTML it's about being better organized and designing things
-                         more clearly so that my CSS is better. With CSS (and recently exploring <span class="skill-bold">SCSS</span>), it's more about learning how little I know. Every day I find some cool new concept
-                         that makes pages look cleaner, more professional, or smoother. When I look back through my work, I can see clear places where I learned a new skill (and then overused it everywhere because I thought it looked neat).
-                             Experience is had with <span class="skill-bold">Bootstrap</span> and it jumps in and out of the code that I use. However, I tend to use Bootstrap as a guide to how things should look, and
-                             then go back and code it myself (sometimes it looks rougher, but I definitely understand it better).
-                        </p>
-                        <p>
-                            Currently the language I enjoy working with the most is <span class="skill-bold">Javascript</span> because of how flexible and fluid it is compared to something like <span class="skill-bold">Java</span> or <span class="skill-bold">C</span> that I came from
-                             following a traditional college path. While a lot of my Javascript is displayed in <span class="skill-bold">jQuery</span> or <span class="skill-bold">AJAX</span> for DOM manipulation or server calls, building
-                             even half finished projects in pure Javascript is enjoyable. I love delving into a language and figuring out how to get the most out of it.
-                        </p>
-                        <p>
-                            While my interest is in front-end development, I've also had to explore the back-end side to get websites up and running. I used <span class="skill-bold">Node.js</span> with <span class="skill-bold">Express</span>
-                             and while I have a little experience with PHP and MySQL, most of my serious websites have used <span class="skill-bold">MongoDB</span> and <span class="skill-bold">Mongoose</span> to store and retrieve data.
-                             While working with back-end I started using <span class="skill-bold">Jade</span> and while it does make the code look cleaner and cuts down on a lot of repetition, most of the time it's simple HTML that I use on
-                             the front-end.
-                        </p>
-                    </div>
-
-                </div>
-                <div class="information-body" id="projects-body">
-                    <a class="github-link" href="http://github.com/IanBarkerDev/" target="_blank">Overall <i class="fa fa-github"></i> Profile</a>
-                    <div class="projects">
-                        <div class="ind-project">
-                            <a class="ind-project-segment" href="http://young-depths-9375.herokuapp.com" target="_blank"><img class="ind-project-img" src="NightlifeScreenShot.png" alt="Night Life"></a>
-                            <div class="ind-project-info ind-project-segment">
-                                <p class="ind-project-title">Night Life App</p>
-                                <p class="ind-project-desc">A single page application where I built the backend on Node.js with a MongoDB database to store information
-                                    and (based on user searches) interacted with Yelp! API for information about local bars. Users can see how many other people
-                                    are attending an event and add themselves to the list of attendees.</p>
-                                <a class="ind-project-repo-link" href="https://github.com/IanBarkerDev/nightlife-app"><i class="fa fa-github"></i>   Repository</a>
-                            </div>
-                        </div>
-                        <div class="ind-project">
-                            <a class="ind-project-segment" href="http://warm-harbor-6326.herokuapp.com" target="_blank"><img class="ind-project-img" src="BookClubScreenShot.png" alt="Book Club"></a>
-                            <div class="ind-project-info ind-project-segment">
-                                <p class="ind-project-title">Book Club</p>
-                                <p class="ind-project-desc">A website that allows users to both add books to their personal collection and to request trades with other users. Searches
-                                 can be made based on username, author, or ISBN number. Back-end is Node.js and Express with MongoDB and Mongoose. Front-end is standard HTML, CSS, Javascript.</p>
-                                <a class="ind-project-repo-link" href="https://github.com/IanBarkerDev/bookclub"><i class="fa fa-github"></i>   Repository</a>
-                            </div>
-                        </div>
-                        <div class="ind-project">
-                            <a class="ind-project-segment" href="http://boiling-bastion-5520.herokuapp.com" target="_blank"><img class="ind-project-img" src="VotingAppScreenShot.png" alt="Voting App"></a>
-                            <div class="ind-project-info ind-project-segment">
-                                <p class="ind-project-title">Voting App</p>
-                                <p class="ind-project-desc">A place for users to create polls that anyone can vote on. Results are viewed with Google Graphs. First website that I built
-                                 where I knew how to use the tools that I would use going in. Still managed to make a ton of mistakes and learned way better ways to do everything.</p>
-                                <a class="ind-project-repo-link" href="https://github.com/IanBarkerDev/votingapp"><i class="fa fa-github"></i>   Repository</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="information-body" id="contact-body">
-                    <p>Get In Touch With Me!</p>
-                    <a href="mailto:ibarker94@yahoo.com">Via Email <i class="fa fa-envelope"></i></a>
-                    <a class="github-link" href="http://github.com/IanBarkerDev/" target="_blank">Via Github <i class="fa fa-github"></i></a>
-                </div>
-            </div>
+            <p class="website-desc">
+                Book Club is a website that allows users to add books to their
+                collection and see others' collections as well. The back-end is
+                built on Node.js with Express serving Jade files. The front-end
+                has a number of pages allowing a user to explore books and collections.
+            </p>
+            <a href="" target="_blank" class="link website-link">View Website</a>
+            <a href="" class="link github-link">View Code</a>
         </div>
     </div>
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script type="text/javascript">
-    var infoBodies = ["#about-body", "#skills-body", "#projects-body", "#contact-body"];
-    var isMoved = false;
-    $(document).ready(function() {
-
-        if(window.innerWidth > 1000) {
-            $(".menu-button").on("click", function() {
-                var id, idBody;
-
-                id = $(this).attr("id");
-                id = id.slice(0, id.length - 5);
-
-                idBody = "#" + id + "-body";
-
-                if(!isMoved) {
-                    $(".menu-buttons").css("animation", "menuSlideUp 1.5s linear forwards");
-                    setTimeout(function() {
-                        updateBodies(idBody)
-                    }, 1500);
-                    isMoved = true;
-                } else {
-                    if($(idBody).css("display") === "block") {
-                        $(idBody).css("display", "none");
-                        $(".menu-buttons").css("animation", "menuSlideDown 1.5s linear forwards");
-                        isMoved = false;
-                    } else {
-                        updateBodies(idBody);
-                    }
-                }
-
-
-
-            });
-        } else {
-            $(".menu-button").on("click", function() {
-                var id, idBody;
-
-                id = $(this).attr("id");
-                id = id.slice(0, id.length - 5);
-
-                idBody = "#" + id + "-body";
-
-                if($(idBody).css("display") === "block") {
-                    $(idBody).css("display", "none");
-                } else {
-                    updateBodies(idBody);
-                }
-            })
-        }
-
-    });
-
-    function updateBodies(idBody) {
-        for(var i in infoBodies) {
-
-            if(infoBodies[i] === idBody) {
-                $(infoBodies[i]).css("display", "block");
-            } else {
-                $(infoBodies[i]).css("display", "none");
-            }
-        }
-    }
-</script>
-
+    <div class="website">
+        <img class="website-img" src="VotingAppScreenShot.png" alt=""/>
+        <div class="website-info">
+            <p class="website-title">Voting App</p>
+            <div class="website-tools">
+                <span class="website-tool">HTML</span>
+                <span class="website-tool">CSS</span>
+                <span class="website-tool">Javascript</span>
+                <span class="website-tool">jQuery</span>
+                <span class="website-tool">AJAX</span>
+                <span class="website-tool">Node</span>
+                <span class="website-tool">Express</span>
+                <span class="website-tool">Jade</span>
+                <span class="website-tool">SCSS</span>
+                <span class="website-tool">MongoDB</span>
+                <span class="website-tool">Mongoose</span>
+            </div>
+            <p class="website-desc">
+                In Voting App, users can create and share polls
+                as well as view the results of them. Back-end is once again built on
+                Node.js with Express and a database with MongoDB. Front-end is a
+                a combination of HTML and Jade files with mostly SCSS and jQuery.
+            </p>
+            <a href="http://boiling-bastion-5520.herokuapp.com" target="_blank" class="link website-link">View Website</a>
+            <a href="" class="link github-link">View Code</a>
+        </div>
+    </div>
+    <div class="website">
+        <img class="website-img" src="NightlifeScreenShot.png" alt=""/>
+        <div class="website-info">
+            <p class="website-title">Night Life App</p>
+            <div class="website-tools">
+                <span class="website-tool">HTML</span>
+                <span class="website-tool">CSS</span>
+                <span class="website-tool">jQuery</span>
+                <span class="website-tool">Node</span>
+                <span class="website-tool">Express</span>
+                <span class="website-tool">MongoDB</span>
+                <span class="website-tool">Mongoose</span>
+            </div>
+            <p class="website-desc">
+                Website designed to let users see how many people are
+                attending a location and sign up themselves. Searches
+                through Yelp! API and stores any location with at least
+                1 attendee in the database.
+            </p>
+            <a href="" class="link website-link">View Website</a>
+            <a href="" class="link github-link">View Code</a>
+        </div>
+    </div>
+</section>
+<footer id="footer">
+    <div class="about">
+        <h6 class="footer-title">About Me</h6>
+        <p>
+            Senior at Knox College with a (soon to be) degree in Computer Science.
+            Love working with HTML, CSS, and Javascript as well as frameworks. Happy
+            just playing games, watching sports, and coding.
+        </p>
+    </div>
+    <div class="links">
+        <h6 class="footer-title">Where I Am</h6>
+        <ul>
+            <li><a href="http://github.com/IanBarkerDev" target="_blank">Github</a></li>
+            <li><a href="mailto:ibarker94@yahoo.com">ibarker94@yahoo.com</a></li>
+        </ul>
+    </div>
+</footer>
 </body>
 </html>
