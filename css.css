@@ -85,6 +85,16 @@ header ul li:hover > a {
     background-color: #fff;
 }
 
+#portfolio h2 {
+    text-align: center;
+    font-size: 56px;
+    font-family: "Open Sans Condensed", sans-serif;
+    text-decoration: underline;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    background-color: rgb(235, 235, 235);
+}
+
 #portfolio .website {
     display: block;
     max-width: 100%;
@@ -94,8 +104,12 @@ header ul li:hover > a {
 
 }
 
-#portfolio .website:nth-child(even) {
+#portfolio .website:nth-child(odd) {
     background-color: rgb(235, 235, 235);
+}
+
+#portfolio .website:nth-child(2) {
+    margin-top: 0;
 }
 
 #portfolio .website:last-child {
