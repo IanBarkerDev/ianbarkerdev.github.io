@@ -130,10 +130,6 @@ header ul li:hover > a {
     border-radius: 10px 10px 3px 3px;
 }
 
-#portfolio .website .website-img:hover {
-    box-shadow: 0 0 50px #FFF990;
-}
-
 #portfolio .website .website-info {
     width: 49%;
     height: 100%;
@@ -189,12 +185,14 @@ header ul li:hover > a {
 
 #portfolio .website .website-info .link {
     border: 1.5px solid #000;
+    border-radius: 6px;
     color: #000;
     font-weight: 600;
     text-decoration: none;
     display: inline-block;
     padding: 6px;
     margin: 50px 8px 0 0;
+    font-family: "Josefin Sans", sans-serif;
 }
 
 #portfolio .website .website-info .link:hover {
@@ -289,10 +287,6 @@ footer .links ul li:hover > a {
 
     #portfolio .website:first-of-type {
         margin-top: 0;
-    }
-
-    #portfolio .website .website-img:hover {
-        box-shadow: 0 0 20px #000;
     }
 }
 
